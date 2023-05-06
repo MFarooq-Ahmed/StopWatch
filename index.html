@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple StopWatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="timer">
+    <h1 id="displaytime"> 00:00:00</h1>
+    <div class="buttons">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAADb29v5+flfX1/29va7u7tXV1cvLy8mJibu7u61tbXy8vI8PDzj4+NkZGTT09Nzc3MhISGTk5PKysqjo6NBQUGpqamhoaGPj48cHBwTExMJCQlra2tHR0d9fX2FhYUzMzNSUlI29gODAAAI0ElEQVR4nOVd63qqOhC1ICCiCEVR1Ar2/R/yHOVzW+vcgCSkYf1tgSxzmVkzk2Q20w0/8ML9ocqj9SI+ns4f59MxXqyjvDrsQy/wtX9fJ5ZpWH2VHzTKrypMl2M3tQe8JL+cGHJPnC554o3d5A7wdtFZTO6Jc7T7CyxXYd2D3BN1uBqbAoVlMh9Er8U8sXRa+kmkgF6LKLFvjc1yZfRa5NnYlH5itVsr5nfDemfLlEwbDfRaNOnY5P6Ht9HG74bN2AYku2jld8NlzAmZqTAOPOZjcfTM8LtzHGOsBsN8l66oA9ME90b53bA3yi/TYf84rA1OR7MD9InaEL/tSPxu2BrgF6h2QLsh177iZHG/ln2W87ppqqI4FEXVNPW8/Oz3oljzbCy6Nyk6JFtY8C23yaGH4io08ltyYaVXLDb7jB9UQbbfLDq9t9SmkLcdoi9xHnbRBWmYdxj+Z00LzkHcgnXhddfovlfIrexBA7+ZVCUtiv6iLi2k43WjkFmL1VX04WM91Ef26qPoS1fFAQBPNEsuiYrPrhKR6IyV6g2RG3NRN/+3Io4K15tE8LlvtZY4+xZ8M1H1NYFS2qj3NDLB0qZIUe14fnokuCDItVPxHdZR+9Tn8G9Z51WBC8cS1Okmmvg8N0TnumO2KRfvGjhQuUUmVEODRMi0YdByw5iJXBUJBozoHmA0GEOvzByxYH7p3kudR772ajJrkl7JtvS0VivSFzU1Qh8gR2rczx8mfzZzI/QBcqRe+7yRcijiMfJ6KTWmeuhFStGX4yRnV1SYqLPqp5bRaKwyAp+KzHVcUJdE0OlLT/NF+MKbde4WgSPGQ6Ol6VIQNQNll/cQ/q5eR9tU0zL8LWazeBAIV1kswwN8WR67B2/AezGWpm1w96HR2HA58LkodLRwQzHmKvoT+IoqMxno45HmhsuB20XJ02gKu7SnXtBHrZkgEY6uoz39dz3AdQ+/nqL5HxuK6J5IsWauuSdRa2NeLtFAxRRjsQPsOdOClwdq02ijiC0zvRSmZlyRtpKLDRqZsWsStkCnIhW1waKvtk3CFthUnOOPYJaCnYR+6qlHytpfbCriFgPrQvo7wa5bEYoc5Y5xpZHn0E7EupAO3ctLNPqADr9gAX+sE5HUMjGsZ2RcQQlobx8ZdRf4v7GFlFxHdRNkKGLrKbycIgFSUvTqHaItyIGKyGEwfIr8HJ/U+1EXSCnI5QbJEkMDD1HOpKbkU/wqQOZAEb3evP/nCv5POlquy0y8gg4TIpPrXesh3UHmrXx9rF5Amn5kgXzveFgX0l2IeoaKQXvFcCe+6UTE2tOKmU6hqgOdABU2HXbxvslXW8JwBheI/XKmkRnFBD0sYYh04uvshYUI4vzYxhBxN18lHxyA5OKrtjCEbeJLeHcJ/gvXhdYwRDrxZ0IRHqSssreGId9+UIQc2RCwNQxXYG34D9kHe2x8gNwahkiM8NlFsFTm32sPQ7glz+AE+Ass2NdaxHAG7tN4jkLwtYJ0r0UMYSVMN1QQBLaIISwCHg+CwonN4djFENZGDwkFOjSSmgSbGILD9OHWgPVPkrfaxBBsy5n4WyxJadvE0Aezwu2ToMsjyhfaxBBWuAn+J1ERvlUMQbel7SjQMRclDK1iCNqLuzxaQgfHCRwa2xiCbs1piXGXFRXbxRCMud3GIjh+ZSWIdjEEy0hu60kF/UFWx2gXQzAgVc2Q/JisjNEuhmCa6JabA3MPoldaxhCUSCUSKRVWIVrGEPSvfbhvhZsXLGMIpmsDuJXC+hnLGILupwcbC+HuDMsYgoHhELYiws0ZljEE49p7ePDK3mgbQ3AxPYAGn6xOsJghVLVQgdpJur/GNoaQac9BI0JXQdnLEEpORGCMSnrym20Mocj2GlRVzR9lCJUELWZQAMclhvEMyktVf5QhZBeOMyiGId2hZhtDKCp8AsPBLjE8I37A32QI+2fu96H789D9tdR9e+i+T+O+X+q+tnBfH7qv8d2P07gfa3M/Xup+zNv9vIX7uSf384cTyAG7n8d3vxbD/Xoa92ui3K9rm0Btovv1pe7XCLtf5z2BWn3391u4v2fG/X1PE9i75v7+Q/f3kLq/D3gCe7nd34/v/pkKEzgXw/2zTdw/n2YCZwy5f07UBM76cv+8NvfP3JvAuYnun305gfNL3T+DdgLnCLt/FvQEzvN2/0z2CZyr7/7dCBO438L9O0omcM/MBO4Kcv++pwnc2TWBe9fcvztvAvcfun+H5QTuIZ3AXbITuA/Y/TudJ3Av9wTuVscV5h3mxRQql27op9Bx//0G05IYd7Q++useOgF6NTlS0yvZFukGxTdQC+qHyZFKjtAey6j4zaZGKjlCB/7ShBN4h6ikfyCw0P0DA11lLgc61z0bUyxK/QCZP5WA8HRb6HXFTXye/cbngInOYItkeBX/vnyyftN7tSbhUW5Vi8FDtAW33Nw4dhCfQmQ8P3V6nDEad3yr5ZjBpVyvUGiQGdPf4qJuPm6RhPsrlM5/j/RR/3FMVMiqVSLiFyue/Kur5Ksfx3rod70arNl+w1W9RhVM/DsWRX8nIC3AfRMAeulBDvKii3XhdQ90+F6B5r3e0EPRS7AlwlO/Eedhl65Mw1w001uctfkYy25lJYvNPuOj0EG230jHZouyY1StE1gX7h3RIdnCTVpukwMVPUOgOSaddRhMP/FZzuumqYriUBRV09TzknU5YcTqvadfCBg5qhm5OPkyACIHRxP0yZhXoIlwzZCelKcAmdxyqcNa+wx8gUBRKYbxzGVgdqjWJlaY3/C4GJE6zPUEEXhkZjjOzU7AXxxFUm4QLmPyu0EQLhoCTUGubkiJ3PpANLaUC652OuzjemdTreAsU+2u5mNPv3f4SQ8lhCBK7KmDfMEyUWE+5olOhTsYq3CYr1OHVk0+BN4u6hDR+YdztLPBNEjhJfkFOuoOxumSJ3+J3QPLNKy+uOBV+VWFqdUTj4UfeOH+UOXRehEfT+eP8+kYL9ZRXh32oRfoXzP/AwtnqXpurH4mAAAAAElFTkSuQmCC" onclick="watchstop()">
+      <img src="https://w7.pngwing.com/pngs/566/248/png-transparent-computer-icons-youtube-play-button-button-angle-text-triangle.png" onclick="watchstart()" >
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7SdFP--_A2Fty7_twGLQJuZ7YNo6H5fPDrA&usqp=CAU" onclick="watchreset()">
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
